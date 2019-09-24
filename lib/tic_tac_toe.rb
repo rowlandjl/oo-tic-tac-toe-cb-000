@@ -79,7 +79,16 @@ class TicTacToe
         end
       end
     end
-    return false 
+    return false
   end
+
+  def full?
+  end
+
+  def draw?
+  end
+
+  def over?
+  end 
 
 end
