@@ -64,7 +64,11 @@ class TicTacToe
       end
     end
 
-    turn 
+    turn
   end
+
+  def current_player
+
+  end 
 
 end
