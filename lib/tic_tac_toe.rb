@@ -73,7 +73,7 @@ class TicTacToe
 
   def won?
     WIN_COMBINATIONS.each_with_index do |element, index|
-      if position_taken?(index)
+      if position_taken?(index) == true 
         if @board[element[0]] == @board[element[1]] && @board[element[1]] == @board[element[2]]
           return WIN_COMBINATIONS[index]
         end
@@ -105,7 +105,7 @@ class TicTacToe
         win = @board[index]
       end
       win
-    end 
+    end
   end
 
   def play
