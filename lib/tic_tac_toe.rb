@@ -97,15 +97,22 @@ class TicTacToe
   end
 
   def winner
-    if !won?
-      nil
+    win = won?
+
+    if win
+      @board[win[0]]
     else
-      win = won?
-      win.each do |index|
-        win = @board[index]
-      end
-      win
+      nil
     end
+    # if !won?
+    #   nil
+    # else
+    #   win = won?
+    #   win.each do |index|
+    #     win = @board[index]
+    #   end
+    #   win
+    # end
   end
 
   def play
