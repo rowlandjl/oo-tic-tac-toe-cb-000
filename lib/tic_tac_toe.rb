@@ -99,9 +99,12 @@ class TicTacToe
   def winner
     if won?
       win = won?
-      @board[win[0]]
+      win.each do |index|
+        win = board[index]
+      end
+      win 
     else
-      nil 
+      nil
     end
   end
 
